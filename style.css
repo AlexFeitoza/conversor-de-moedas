@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -24,7 +24,7 @@ body {
 main {
     background-color: #fff;
     
-    height: 720px;
+    
     width: 350px;
     margin-top: 250px;
     position: absolute;
@@ -36,11 +36,42 @@ main {
 
 }
 
-select {
-    display: block;
-    flex-direction:column
+.box-real {
+    display: inline-block;
+    width: 89%;
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
     
 }
+
+.real {
+    font-weight: bold;
+}
+.box-moedas {
+    display: inline-block;
+    width: 89%;
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#ivalor {
+    display: inline-block;
+    width: 89%;
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin-top: 20px;
+   
+}
+
 button {
     font-size: 1em;
     font-weight: bold;
@@ -56,11 +87,6 @@ button {
     margin-top: 15px;
 }
 
-label {
-    display:inline-block;
-    padding-top: 30px;
-    flex-direction:column
-}
 
 section {
     border: 1px solid #8A51FC;

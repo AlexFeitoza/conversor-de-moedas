@@ -39,7 +39,10 @@ button {
     display: block;
     background-color: #8A51FC;
     color: #fff;
-    
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
 }
 
 label {

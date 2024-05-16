@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    outline: none;
 }
 
 body {
@@ -15,62 +16,43 @@ body {
 
 
 .gift {
-    height: 200px;
-    margin: auto;
+    height: 300px;
     display: block;
-    padding:10px ;
+    margin: 20px auto;
+    
+    
 }
 
 main {
     background-color: #fff;
-    
-    
     width: 350px;
-    margin-top: 250px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    
+    padding: 44px 24px 23px;
     text-align: center;
     border-radius: 10px;
 
 }
 
-.box-real {
-    display: inline-block;
-    width: 89%;
-    padding: 10px;
-    border: solid 1px gray;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    
+label{
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
 }
 
-.real {
-    font-weight: bold;
-}
-.box-moedas {
-    display: inline-block;
-    width: 89%;
-    padding: 10px;
-    border: solid 1px gray;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-#ivalor {
-    display: inline-block;
-    width: 89%;
-    padding: 10px;
-    border: solid 1px gray;
-    border-radius: 5px;
-    margin-bottom: 20px;
+select {
+    background-color: #fff;
+    border: 1px solid  #bbbbbb;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 25px;
+    appearance: none;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
 }
 
-.content {
-    margin-top: 20px;
-   
-}
 
 button {
     font-size: 1em;

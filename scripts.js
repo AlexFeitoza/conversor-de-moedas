@@ -35,18 +35,18 @@ function convertValues(){
     }
 
 
-
-
-
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency", currency: "BRL"
     }).format(inputCoinValue)
 
-    
-
-    
-}
+  }
    
+  function changeCoin(){
+    console.log("reviver")
+  }  
+
+
+coinSelect.addEventListener("change", changeCoin )
 
 convertButton.addEventListener("click", convertValues)
 

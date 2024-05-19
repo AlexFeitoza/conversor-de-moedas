@@ -2,18 +2,18 @@
 const convertButton = document.querySelector(".convert-button")
 const coinSelect = document.querySelector(".box-coins")
 
-function convertValues(){
+function convertValues() {
     const inputCoinValue = document.querySelector(".input-coin").value
-
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert") // valor em real
 
     const currencyValueConverted = document.querySelector(".currency-value") // outras moedas
-
-    console.log(coinSelect.value)
+    
     const dolarToday = 5.1
     const euroToday = 5.5
     const libraToday = 6.5
-
+    const francoToday = 5.6
+    const dolarausToday = 3.4
+    const dolarcadToday = 3.7
      
 
     if(coinSelect.value == "dolar"){
@@ -34,6 +34,23 @@ function convertValues(){
         }).format(inputCoinValue  / libraToday)
     }
 
+    if(coinSelect.value == "franco"){
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("fr-FR", {
+            style: "currency", currency: "CHF"
+        }).format(inputCoinValue / francoToday)
+    }
+
+    if(coinSelect.value == "australia"){
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-AU", {
+            style: "currency", currency: "AUD"
+        }).format(inputCoinValue / dolarausToday)
+    }      
+
+    if(coinSelect.value == "canada"){
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-CA", {
+            style: "currency", currency: "CAD"
+        }).format(inputCoinValue / dolarcadToday)
+    }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency", currency: "BRL"
@@ -41,10 +58,45 @@ function convertValues(){
 
   }
    
+  
+
   function changeCoin(){
-    console.log("reviver")
+    const coinName = document.getElementById("icurrency")
+    const coinImage = document.querySelector(".coin-img")
+
+    if(coinSelect.value == "dolar"){
+        coinName.innerHTML = "Dólar Americano"
+        coinImage.src = "imagens/estados-unidos (1) 1.png"  
+    }
+
+    if(coinSelect.value == "euro"){
+        coinName.innerHTML = "Euro" 
+        coinImage.src = "imagens/euro.png" 
+    }
+
+    if(coinSelect.value == "libra"){
+        coinName.innerHTML = "Libra"
+        coinImage.src = "imagens/united-kingdom-flag-logo.png"  
+    }
+
+    if(coinSelect.value == "franco"){
+        coinName.innerHTML = "Franco Suiço" 
+        coinImage.src = "imagens/switrzeland-logo.png"
   }  
 
+    if(coinSelect.value == "australia"){
+        coinName.innerHTML = "Dólar Australiano"
+        coinImage.src = "imagens/australia-logo.png"
+    }
+
+    if(coinSelect.value == "canada"){
+        coinName.innerHTML = "Dólar Canadense"
+        coinImage.src = "imagens/canada-logo.png"
+    }
+
+    convertValues()
+
+}
 
 coinSelect.addEventListener("change", changeCoin )
 

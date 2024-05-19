@@ -1,5 +1,6 @@
 
 const convertButton = document.querySelector(".convert-button")
+const coinSelect = document.querySelector(".box-coins")
 
 function convertValues(){
     const inputCoinValue = document.querySelector(".input-coin").value
@@ -8,6 +9,7 @@ function convertValues(){
 
     const currencyValueConverted = document.querySelector(".currency-value") // outras moedas
 
+    console.log(coinSelect.value)
     const dolarToday = 5.1
     const euroToday = 5.5
     const libraToday = 6.5

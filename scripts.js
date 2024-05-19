@@ -14,17 +14,37 @@ function convertValues(){
     const euroToday = 5.5
     const libraToday = 6.5
 
-    const convertedValue = inputCoinValue / dolarToday 
+     
+
+    if(coinSelect.value == "dolar"){
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+            style: "currency", currency: "USD"
+        }).format(inputCoinValue / dolarToday)
+    }
+
+    if(coinSelect.value == "euro"){
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
+            style: "currency", currency: "EUR"
+        }).format(inputCoinValue  / euroToday)
+    }
+
+    if (coinSelect.value == "libra"){
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-UK", {
+            style: "currency", currency: "GBP"
+        }).format(inputCoinValue  / libraToday)
+    }
+
+
+
+
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency", currency: "BRL"
     }).format(inputCoinValue)
 
-    currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
-        style: "currency", currency: "USD"
-    }).format(convertedValue)
+    
 
-    console.log(convertedValue)
+    
 }
    
 

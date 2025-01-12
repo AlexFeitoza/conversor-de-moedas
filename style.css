@@ -10,7 +10,7 @@
 }
 
 body {
-    background: url();
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(2,37,78,1) 0%, rgba(4,56,126,1) 19.7%, rgb(85, 208, 245) 100.2% );
     height: 999px;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ body {
 
 
 main {
-    background-color: #fff;
+    background-color: #0d0d3b;
     width: 350px;
     margin: 120px;
     padding: 44px 24px 23px;
@@ -30,7 +30,7 @@ main {
 }
 
 label{
-    color: #777777;
+    color: #fff;
     font-weight: 400;
     font-size: 14px;
 }
@@ -65,7 +65,7 @@ button {
     font-weight: 700;
     display: block;
     width: 100%;
-    background-color: #8A51FC;
+    background-color: #0c87b1;
     color: #fff;
     margin: auto;
     height: 48px;
@@ -84,7 +84,7 @@ button:active {
 }
 
 section {
-    border: 1px solid #8A51FC;
+    border: 1px solid #fff;
     margin-top: 30px;
     padding: 12px;
     border-radius: 10px;
@@ -106,12 +106,12 @@ section {
 }
 
 .currency {
-    color: #777777;
+    color: #fff;
     font-size: 14px;
 }
 
 .currency-value, .currency-value-to-convert {
-    color: #555555;
+    color: #fff;
     font-size: 20px ;
     font-weight: 700;
 }
